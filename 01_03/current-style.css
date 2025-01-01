@@ -13,6 +13,11 @@
   list-style: none;
   margin: 1rem;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  grid-auto-flow: dense;
+  /* grid-template-rows: auto; */
 }
 
 .grid li {
@@ -20,8 +25,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-column: span 1;
+  grid-row: span 1;
 }
 
 li.featured {
   border-color: purple;
+  grid-column: span 2;
+  grid-row: span 2;
 }
