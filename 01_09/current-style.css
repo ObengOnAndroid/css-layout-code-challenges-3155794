@@ -1,5 +1,6 @@
 :root {
   --content-width: 50ch;
+  --card-width: 450px;
 }
 
 body {
@@ -24,19 +25,20 @@ img {
 }
 
 .main {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card {
-
+  width: var(--card-width);
+  border: black solid 0.25rem;
 }
 
 .card figcaption {
-
 }
 
 .card h2 {
-
 }
 
 .card button {

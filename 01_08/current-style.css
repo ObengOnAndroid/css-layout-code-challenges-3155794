@@ -14,7 +14,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+p {
+  max-width: 70%;
+}
 .header {
   margin-right: auto;
   margin-left: auto;
@@ -23,10 +25,13 @@ img {
 }
 
 .main {
-  margin-right: auto;
+  /* margin-right: auto;
   margin-left: auto;
   padding: 2rem;
-  max-width: calc(var(--content-width) - 4rem);
+  max-width: calc(var(--content-width) - 4rem); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main > * {
@@ -36,8 +41,11 @@ main > * {
 .highlight {
   background-color: rgb(71, 167, 251);
 }
-
-.full-width {
- 
+figure {
+  padding: 0;
 }
-
+.full-width {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
