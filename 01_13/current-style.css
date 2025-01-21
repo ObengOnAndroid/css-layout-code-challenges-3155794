@@ -27,10 +27,18 @@ img {
 .main {
   margin: 0 auto;
   padding: 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  grid-auto-flow: dense;
+  /* fiils empty space */
 }
 
 .card {
   display: flex;
+  /* width: clamp(20ch, 30%, 100%); */
   border: 0.5rem solid black;
   container-type: inline-size;
 }
@@ -67,6 +75,6 @@ img {
   text-transform: uppercase;
 }
 
-/* .featured {
+.featured {
   grid-column: span 2;
-} */
+}
